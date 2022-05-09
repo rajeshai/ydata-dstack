@@ -1,0 +1,12 @@
+workflows:
+  - name: train
+    provider: python
+    requirements: requirements.txt
+    script: app.py
+    environment:
+      PYTHONPATH: src
+    artifacts:
+      - folder
+      - cache
+    resources:
+      gpu: ${{ tgpu }}
