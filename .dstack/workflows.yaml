@@ -1,6 +1,6 @@
 workflows:
   - name: train
-    provider: python==3.8
+    provider: python
     requirements: requirements.txt
     script: app.py
     environment:
