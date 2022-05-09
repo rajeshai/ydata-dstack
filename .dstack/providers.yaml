@@ -1,5 +1,5 @@
 providers:
-    - name: train
+    - name: curl
       image: python:3.8
       commands:
         - pip3 install -r providers/curl/requirements.txt

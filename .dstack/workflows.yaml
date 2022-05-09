@@ -1,6 +1,6 @@
 workflows:
   - name: train
-    provider: python
+    provider: curl
     requirements: requirements.txt
     script: app.py
     environment:
